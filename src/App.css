@@ -1,5 +1,26 @@
-/* .form {
-} */
+/*----- GLOBAL -----*/
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+}
+
+/*----- TASK DISPLAY -----*/
+.todo-list {
+}
+.task {
+}
+
+/*----- TASK FORM -----*/
+.form {
+}
 .task-input {
   width: 40vw;
+}
+.task-btn {
 }
