@@ -4,7 +4,12 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
 }
 
 h1 {
@@ -14,6 +19,15 @@ h1 {
 .todo-list {
 }
 .task {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+.task-todo {
+}
+
+.task-done {
+  text-decoration: line-through solid black;
 }
 
 /*----- TASK FORM -----*/

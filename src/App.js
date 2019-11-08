@@ -1,22 +1,16 @@
 import React, { useState } from "react";
 import "./App.css";
-import Task from "./Task";
+import TodoList from "./TodoList";
 
 function App() {
   const [taskInput, setTaskInput] = useState("");
   const [todoList, setTodoList] = useState([]);
-  const [taskDone, setTaskDone] = useState(false);
+
   return (
     <div className="page-wrapper">
       <h1>To-Do list</h1>
 
-      <div className="todo-list">
-        <ul>
-          {todoList.map((task, index) => {
-            return <Task task={task} />;
-          })}
-        </ul>
-      </div>
+      <TodoList todoList={todoList} setTodoList={setTodoList} />
       <div className="form">
         <form
           onSubmit={event => {
