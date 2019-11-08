@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-const Task = ({ task }) => {
-  const [taskDone, setTaskDone] = useState(false);
+// const Task = ({ task }) => {
+//   const [taskDone, setTaskDone] = useState(false);
 
-  return (
-    <li
-      className={taskDone === true ? "task-done" : "task-todo"}
-      onClick={() => {
-        setTaskDone(!taskDone);
-      }}
-    >
-      {task}
-    </li>
-  );
-};
+//   return (
+//     <li
+//       className={taskDone === true ? "task-done" : "task-todo"}
+//       onClick={() => {
+//         setTaskDone(!taskDone);
+//       }}
+//     >
+//       {task}
+//     </li>
+//   );
+// };
 
-export default Task;
+// export default Task;

@@ -19,9 +19,13 @@ h1 {
 .todo-list {
 }
 .task {
-  width: 20vw;
+  width: 45vw;
   display: flex;
   justify-content: space-between;
+}
+.time-of-creation {
+  align-self: flex-start;
+  font-weight: 200;
 }
 .task-todo {
 }
