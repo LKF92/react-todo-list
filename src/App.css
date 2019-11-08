@@ -32,9 +32,23 @@ h1 {
 
 /*----- TASK FORM -----*/
 .form {
+  border: solid 1px lightgrey;
+  border-radius: 5px;
 }
 .task-input {
   width: 40vw;
+  height: 3vh;
+  border: none;
+  outline: none;
+  text-indent: 15px;
 }
 .task-btn {
+  font-weight: bold;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-left: lightgrey;
+}
+.task-btn:hover {
+  background-color: lightgrey;
 }

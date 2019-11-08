@@ -11,6 +11,7 @@ function App() {
       <h1>To-Do list</h1>
 
       <TodoList todoList={todoList} setTodoList={setTodoList} />
+
       <div className="form">
         <form
           onSubmit={event => {
