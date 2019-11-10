@@ -10,14 +10,32 @@ function App() {
   return (
     <div className="page-wrapper">
       <h1>To-Do list</h1>
-      <input
-        className="search-bar"
-        type="search"
-        value={search}
-        onChange={event => {
-          setSearch(event.target.value);
-        }}
-      />
+      <div className="search">
+        <input
+          className="search-bar"
+          type="search"
+          value={search}
+          onChange={event => {
+            setSearch(event.target.value);
+          }}
+        />
+        <button className="search-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="grey"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
       <TodoList todoList={todoList} setTodoList={setTodoList} search={search} />
 
       <div className="form">

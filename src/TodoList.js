@@ -1,5 +1,5 @@
 import React from "react";
-// import Task from "./Task";
+import Task from "./Task";
 
 const TodoList = ({ todoList, setTodoList, search }) => {
   return (
@@ -12,30 +12,23 @@ const TodoList = ({ todoList, setTodoList, search }) => {
         .sort((task1, task2) => {
           return task1.isDone === task2.isDone ? 0 : task1.isDone ? 1 : -1;
         })
-        .map(({ task, isDone, created }, index) => {
+        .map((currentTask, index) => {
+          const { task, isDone, created } = currentTask;
           return (
-            <div className="task">
-              <div className="time-of-creation">{created}</div>
-              <li
-                className={isDone === true ? "task-done" : "task-todo"}
-                onClick={() => {
-                  const updatedTodoList = [...todoList];
-                  updatedTodoList[index].isDone = !isDone;
-                  setTodoList(updatedTodoList);
-                }}
-              >
-                {task}
-              </li>
-              <div
-                onClick={() => {
-                  const updatedTodoList = [...todoList];
-                  updatedTodoList.splice(index, 1);
-                  setTodoList(updatedTodoList);
-                }}
-              >
-                ❌
-              </div>
-            </div>
+            <Task
+              key={index + created}
+              crossMe={() => {
+                let updatedTodoList = [...todoList];
+                currentTask.isDone = !isDone;
+                setTodoList(updatedTodoList);
+              }}
+              deleteMe={() => {
+                const updatedTodoList = [...todoList];
+                updatedTodoList.splice(updatedTodoList.indexOf(currentTask), 1);
+                setTodoList(updatedTodoList);
+              }}
+              currentTask={currentTask}
+            />
           );
         })}
     </ul>
