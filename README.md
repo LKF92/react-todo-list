@@ -1,3 +1,13 @@
+# TRY IT [HERE](https://to-do-or-not-to-do.netlify.com)
+
+## How this works : 
+-> write a task in your to-do 
+-> cross it when its done
+-> remove tasks
+-> filter by keyword with the top searchbar
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
