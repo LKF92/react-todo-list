@@ -1,7 +1,7 @@
 # TRY IT [HERE](https://to-do-or-not-to-do.netlify.com)
 
 ## How this works : 
--> write a task in your to-do 
+-> write a task in your to-do <br>
 -> cross it when its done
 -> remove tasks
 -> filter by keyword with the top searchbar
